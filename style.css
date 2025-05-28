@@ -174,7 +174,7 @@ body {
   flex: 1 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   margin-top: 40px;
   text-align: left;
@@ -184,7 +184,7 @@ body {
 
 .about-content p {
   color: #666;
-  font-size: 20px;
+  font-size: 25px;
   text-align: left;
   width: 100%;
 }
@@ -197,6 +197,7 @@ body {
   margin: 0 0 9px 0;
   line-height: 1.2;
   letter-spacing: 0;
+  text-align: left;
 }
 
 .about-content p {
@@ -290,8 +291,12 @@ body {
 
 .bac-ground {
   position: relative;
-  background-image: url(https://vantaithiennhan.com/storage/general/logo/layer-34.png);
-  background-size: cover;
+  background-image: url(images/logo.png);
+  background-size: 120%; /* Tăng kích thước hình nền lên 120% */
+  background-size: contain; /* Hiển thị toàn bộ hình */
+  background-repeat: no-repeat; /* Không lặp lại hình */
+  background-position: center top; 
+  
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -300,6 +305,7 @@ body {
   padding-bottom: 80px;
   overflow: hidden;
 }
+
 
 .bac-ground::before {
   content: "";
@@ -596,7 +602,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #01710c;
+  background-color: #1858A8;
   color: white;
 }
 
@@ -636,7 +642,7 @@ body {
   text-align: center;
   font-size: 28px;
   font-weight: 700;
-  color: #28a745;
+  color: #1858A8;
   margin-bottom: 25px;
   position: relative;
   text-transform: uppercase;
@@ -665,8 +671,8 @@ body {
   background-color: transparent;
   background-image: radial-gradient(
     at center center,
-    #0b4f13 46%,
-    #3cce1d 100%
+    #0b214f 46%,
+    #1858A8 100%
   );
   padding: 20px 0 0px;
   color: #000;
@@ -739,7 +745,7 @@ body {
 
 .steps li span {
   font-weight: bold;
-  color: #007c00;
+  color: #1858A8;
   margin-right: 5px;
 }
 
@@ -749,7 +755,7 @@ body {
 }
 
 .contact-btn button {
-  background-image: linear-gradient(180deg, #024824 0%, #19ff88 100%);
+  background-image: linear-gradient(180deg, #0b214f 0%, #1858A8 100%);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px 15px;
@@ -842,13 +848,30 @@ body {
 }
 
 /* Video Container */
+.videos {
+    max-width: 1200px;
+  margin: 70px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos h2{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1858A8;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #1858A8;
+  display: inline-block;
+}
 .video {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
-  max-width: 1200px;
-  margin: 0 auto 20px;
   padding: 15px 10px;
   box-shadow: 0 0 10px gray;
 }
@@ -877,6 +900,24 @@ body {
 }
 
 /* phần cuối */
+.news{
+  max-width: 1200px;
+  margin: 150px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.news h2{
+   text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1858A8;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #1858A8;
+  display: inline-block;
+}
 .factory-container {
   font-family: "Saira Condensed", sans-serif;
   display: flex;

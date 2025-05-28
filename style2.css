@@ -96,6 +96,13 @@ textarea {
     width: 35px;
     margin-left: 5px;
 }
+.mang_xa_hoi_tieu_de img {
+  transition: transform 0.3s ease; /* mượt mà khi hover và khi bỏ hover */
+}
+
+.mang_xa_hoi_tieu_de img:hover {
+  transform: translateY(-10px); /* nhảy lên trên 10px */
+}
 
 .tieu_de_duoi {
     position: relative;
@@ -110,10 +117,59 @@ textarea {
     bottom: 0;
     background: var(--color-main);
 }
+.tieu_de_trai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tieu_de_trai a img{
+    width: 100%;
+    height: 110px;
+}
 
 .tieu_de_phai_tren {
-    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
 }
+.tieu_de_phai_tren .text-header{
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.text-header-marquee {
+  position: relative;
+  width: 100%; /* Có thể chỉnh kích thước phù hợp */
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+  
+}
+
+.marquee-inner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Tùy chỉnh hotline */
+.hotline-header span {
+  font-weight: bold;
+  color: red;
+}
+
 
 .duong_day_nong {
     display: inline-block;
@@ -168,6 +224,14 @@ textarea {
     text-decoration: none !important;
     width: 100%;
     background-color: var(--color-main);
+}
+.menu_chinh ul li i{
+    text-align: right; 
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
 }
 
 .menu_chinh ul li a h2 {
