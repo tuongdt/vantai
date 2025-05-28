@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SVN-Aptima";
+  src: url("fonts/SVN-Aptima.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -128,13 +136,7 @@ body {
   margin: 0 10px;
   color: white;
 }
-@font-face {
-  font-family: "SVN-Aptima";
-  src: url("../fonts/SVN-Aptima.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 /* dịch vụ */
 .container-dv {
   font-family: "SVN-Aptima", Arial, "Segoe UI", sans-serif;
